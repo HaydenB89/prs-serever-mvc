@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prs-serever-mvc", "prs-serever-mvc\prs-serever-mvc.csproj", "{47CE18C0-8A84-4F0E-A270-C057108344E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47CE18C0-8A84-4F0E-A270-C057108344E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CE18C0-8A84-4F0E-A270-C057108344E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CE18C0-8A84-4F0E-A270-C057108344E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CE18C0-8A84-4F0E-A270-C057108344E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46905FD7-AEE0-4011-BB98-9651CE3CDFBD}
+	EndGlobalSection
+EndGlobal
