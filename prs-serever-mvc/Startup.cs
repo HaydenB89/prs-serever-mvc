@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using prs_serever_mvc.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +18,11 @@ namespace prs_serever_mvc {
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // This method gets called by the runtime. Use this method to add services to the container. (*me/ added AddDbcontext)
         public void ConfigureServices(IServiceCollection services) {
+            services.AddDbContext<CornerstonePRSPracticeContext>(x => {
+                x.UseSqlServer(Configuration.GetConnectionString("CornerstonePRSPracticeContext"));
+            });
             services.AddControllersWithViews();
         }
 
@@ -38,7 +43,7 @@ namespace prs_serever_mvc {
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Users}/{action=Login}/{id?}");
             });
         }
     }
